@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* header */
+header{
+    background-color: skyblue;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+img.logo{
+    margin: 0;
+    padding: 20px;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+/* footer */
+footer{
+    background-color: skyblue;
+    padding: 10px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    max-height: 50px;
+    position: fixed;
+}
+h2.footertitle{
+    display: inline;
+    float: left;
+    margin: 0;
+}
+p.footercontent{
+    display: inline;
+}
+a{
+    text-decoration: 0;
+    color: black;
+}
+
+/* backgrounds */
+.bg1{
+    background-image: url(../images/background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+/* texts */
+h1{
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+}
+h2{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+p{
+    font-family: 'Baloo 2', cursive;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+p.judul{
+    font-size: 40px;
+}
+
+/* misc elements */
+img{
+    max-width: 500px;
+    max-height: 1000px;
+    border-radius: 10px;
+    margin: 50px;
+}
+iframe{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 768px;
+    width: 1660px;
+    border-radius: 15px;
+    border-width: 10px 10px 10px 10px;
+    border-color: skyblue;
+}
+
+/* pagelayout */
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sub-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* animation */
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    padding: 10px;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }   
+}
+.titleanimation{
+    animation-name: judul;
+    animation-duration: 3s;
+}
+@keyframes judul{
+    0% {opacity: 0%;}
+    50% {opacity: 100%;}
+}
